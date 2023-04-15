@@ -1,6 +1,8 @@
 <?php
 session_start();
+//lo mismo con el conect
 include_once "php/config.php";
+//verifica la coneccion
 if (!isset($_SESSION['unique_id'])) {
   header("location: login.php");
 }
@@ -13,6 +15,7 @@ if (!isset($_SESSION['unique_id'])) {
       <header>
         <div class="content">
           <?php
+          //
           $sql = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}");
           if (mysqli_num_rows($sql) > 0) {
             $row = mysqli_fetch_assoc($sql);
@@ -24,11 +27,11 @@ if (!isset($_SESSION['unique_id'])) {
             <p><?php echo $row['status']; ?></p>
           </div>
         </div>
-        <a href="php/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">Cerrar Sesión</a>
+        <a style="background-color: #DB4B2C" href="php/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">Cerrar Sesión</a>
       </header>
       <div class="search">
-        <span class="text">Selecciona un usuario para iniciar el chat</span>
-        <input type="text" placeholder="Enter name to search...">
+        <span class="text">Usuarios Registrados</span>
+        <input type="text" placeholder="Buscar Usuario...">
         <button><i class="fas fa-search"></i></button>
       </div>
       <div class="users-list">

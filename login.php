@@ -10,7 +10,7 @@ if (isset($_SESSION['unique_id'])) {
 <body>
   <div class="wrapper">
     <section class="form login">
-      <header>Sistema de Chat en Línea en PHP y MySQL</header>
+      <center> <header style="color: #329744;">MiChatXD.COM</header></center>
 
       <!--formulario POST-->
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
@@ -18,7 +18,7 @@ if (isset($_SESSION['unique_id'])) {
         <div class="field input">
 
         <!--Recogemos los datos del usuario y los enviamos por POST-->
-          <label>Dirección de Correo Electrónico</label>
+          <label>Correo Electrónico</label>
           <input type="text" name="email" placeholder="Ingresa tu Correo" required>
         </div>
         <div class="field input">

@@ -11,7 +11,8 @@ $password = mysqli_real_escape_string($conn, $_POST['password']);
 
 //varificamos q los datos no esten vacios
 if (!empty($fname) && !empty($lname) && !empty($email) && !empty($password)) {
-    //validamos el e-mail q este en formato correcto
+
+    //VALIDAMOS el e-mail q este en formato correcto
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         //validamos que el nuevo usuario no exista en la BD
         $sql = mysqli_query($conn, "SELECT * FROM users WHERE email = '{$email}'");

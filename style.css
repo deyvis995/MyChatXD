@@ -11,19 +11,20 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #fc7d1c;
+  background: #0e1623;
   padding: 0 10px;
 }
 .wrapper{
-  background: #fff;
+  background: #464242;
   max-width: 450px;
   width: 100%;
   border-radius: 16px;
-  box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
-              0 32px 64px -48px rgba(0,0,0,0.5);
+  box-shadow: 0 0 128px 0 rgba(95, 20, 93, 0),
+              0 32px 64px -48px rgba(74, 27, 20, 0);
+              color: #cacaca;
 }
 
-/* Login & Signup Form CSS Start */
+/* Login & Signup Formularios CSS Inicial */
 .form{
   padding: 25px 30px;
 }
@@ -37,7 +38,7 @@ body{
   margin: 20px 0;
 }
 .form form .error-text{
-  color: #721c24;
+  color: #840815;
   padding: 8px 10px;
   text-align: center;
   border-radius: 5px;
@@ -70,7 +71,7 @@ body{
   font-size: 16px;
   padding: 0 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #1100ff00;
 }
 .form form .field input{
   outline: none;
@@ -81,9 +82,9 @@ body{
 .form form .button input{
   height: 45px;
   border: none;
-  color: #fff;
+  color: #fbf5f5;
   font-size: 17px;
-  background: #1984bc;
+  background: #0d853f;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 13px;
@@ -92,12 +93,12 @@ body{
   position: absolute;
   right: 15px;
   top: 70%;
-  color: #ccc;
+  color: #3d53e6;
   cursor: pointer;
   transform: translateY(-50%);
 }
 .form form .field i.active::before{
-  color: #333;
+  color: #434242;
   content: "\f070";
 }
 .form .link{
@@ -106,7 +107,7 @@ body{
   font-size: 17px;
 }
 .form .link a{
-  color: #333;
+  color: #399432;
 }
 .form .link a:hover{
   text-decoration: underline;
@@ -122,7 +123,7 @@ body{
   display: flex;
   align-items: center;
   padding-bottom: 20px;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #2da743;
   justify-content: space-between;
 }
 .wrapper img{
@@ -147,8 +148,8 @@ body{
 }
 .users header .logout{
   display: block;
-  background: #333;
-  color: #fff;
+  background: #aeaeae;
+  color: #e9e9e9;
   outline: none;
   border: none;
   padding: 7px 15px;
@@ -172,7 +173,7 @@ body{
   width: calc(100% - 50px);
   font-size: 16px;
   padding: 0 13px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #069337;
   outline: none;
   border-radius: 5px 0 0 5px;
   opacity: 0;
@@ -192,13 +193,13 @@ body{
   cursor: pointer;
   border: none;
   background: #fff;
-  color: #333;
+  color: #686868;
   outline: none;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px 5px 5px 5px;
   transition: all 0.2s ease;
 }
 .users .search button.active{
-  background: #333;
+  background: #e14a4a;
   color: #fff;
 }
 .search button.active i::before{
@@ -215,7 +216,7 @@ body{
   padding-bottom: 10px;
   margin-bottom: 15px;
   padding-right: 15px;
-  border-bottom-color: #f1f1f1;
+  border-bottom-color: #1c9133;
 }
 .users-list a:last-child{
   margin-bottom: 0px;
@@ -226,7 +227,7 @@ body{
   width: 40px;
 }
 .users-list a .details p{
-  color: #67676a;
+  color: #979797;
 }
 .users-list a .status-dot{
   font-size: 12px;
@@ -234,7 +235,7 @@ body{
   padding-left: 10px;
 }
 .users-list a .status-dot.offline{
-  color: #ccc;
+  color: #868686;
 }
 
 /* Chat Area CSS Start */
@@ -244,7 +245,7 @@ body{
   padding: 18px 30px;
 }
 .chat-area header .back-icon{
-  color: #333;
+  color: #f1f1f1;
   font-size: 18px;
 }
 .chat-area header img{
@@ -262,7 +263,7 @@ body{
   max-height: 500px;
   overflow-y: auto;
   padding: 10px 30px 20px 30px;
-  background: #f7f7f7;
+  background: #34de5cb5;
   box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
               inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
 }

@@ -1,5 +1,6 @@
 <?php
 session_start();
+//Gaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 //Heluuuuuuuu
 //el connnnnnnnecthorrrrrrrrrrrrrrrrr :3
 include_once "php/config.php";
@@ -13,6 +14,8 @@ if (!isset($_SESSION['unique_id'])) {
 
 <body>
   <div class="wrapper">
+    
+    <!--campo, form del chat-->
     <section class="chat-area">
       <header>
         <?php
@@ -38,6 +41,11 @@ if (!isset($_SESSION['unique_id'])) {
         <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
         <input type="text" name="message" class="input-field" placeholder="Mensaje" autocomplete="off">
         <!--boton de envio xd-->
+
+        
+        <!--button>😎</button-->
+
+
         <button><i class="fab fa-telegram-plane"></i></button>
       </form>
     </section>

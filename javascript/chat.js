@@ -1,14 +1,18 @@
+//items que interactuan con el back
 const form = document.querySelector(".typing-area"),
 incoming_id = form.querySelector(".incoming_id").value,
 inputField = form.querySelector(".input-field"),
 sendBtn = form.querySelector("button"),
 chatBox = document.querySelector(".chat-box");
 
+//si no envia por button POST te Bota error
 form.onsubmit = (e)=>{
     e.preventDefault();
 }
 
 inputField.focus();
+
+//activa el boton de envio. solamente si estoy escribiendo.
 inputField.onkeyup = ()=>{
     if(inputField.value != ""){
         sendBtn.classList.add("active");
@@ -17,7 +21,9 @@ inputField.onkeyup = ()=>{
     }
 }
 
+//boton de envio del Chat
 sendBtn.onclick = ()=>{
+    //AJAX
     let xhr = new XMLHttpRequest();
     xhr.open("POST", "php/insert-chat.php", true);
     xhr.onload = ()=>{
@@ -31,6 +37,7 @@ sendBtn.onclick = ()=>{
     let formData = new FormData(form);
     xhr.send(formData);
 }
+
 chatBox.onmouseenter = ()=>{
     chatBox.classList.add("active");
 }

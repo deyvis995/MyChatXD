@@ -1,1 +1,1 @@
-window.location.reload();
+window.location.reload();//por ahora esto no funciona xddd

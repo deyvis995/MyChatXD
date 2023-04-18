@@ -28,7 +28,8 @@ if (!empty($email) && !empty($password)) {
                 //validamos el logeo
                 $_SESSION['unique_id'] = $row['unique_id'];
                 
-                //echo "Proceso Exitoso";
+                echo "Proceso Exitoso";
+                //header("Location: ../users.php")
                 //session_start();
                 /*if(!isset($_SESSION['already_refreshed'])){
                     $ActualizarDespues = 5;
@@ -37,14 +38,14 @@ if (!empty($email) && !empty($password)) {
                 }*/
 
             } else {
-                echo "Algo salió mal. ¡Inténtalo de nuevo!";
+                //echo "Algo salió mal. ¡Inténtalo de nuevo!";
             }
         } else {
-            echo "¡Correo electrónico o la contraseña son incorrectos!";
+            //echo "¡Correo electrónico o la contraseña son incorrectos!";
         }
     } else {
-        echo "$email - ¡Este correo electrónico no existe!";
+        //echo "$email - ¡Este correo electrónico no existe!";
     }
 } else {
-    echo "¡Todos los campos de entrada son obligatorios!";
+    //echo "¡Todos los campos de entrada son obligatorios!";
 }
